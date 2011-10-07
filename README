@@ -1,0 +1,20 @@
+*** Alore emacs mode README ***
+
+
+Installation
+------------
+
+Copy alore-mode.el to /usr/local/share/emacs/site-lisp or
+/usr/share/emacs/site-lisp.
+
+Add these lines to your .emacs file:
+
+  (autoload 'alore-mode "alore-mode" "Alore editing mode" t)
+  (add-to-list 'auto-mode-alist '("\\.alo\\'" . alore-mode))
+
+
+Compatibility
+-------------
+
+Tried with emacs 23.1.1 in Ubuntu 10.04. Should work with other emacs
+versions and in other operating system as well.
